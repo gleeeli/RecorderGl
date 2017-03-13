@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1904FFB21D45FD3A00088DD8 /* RecorderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1904FFB11D45FD3A00088DD8 /* RecorderTableViewCell.m */; };
+		1914A9521D45A7E800EFAA62 /* GlOperationRecorderSql.m in Sources */ = {isa = PBXBuildFile; fileRef = 1914A9511D45A7E800EFAA62 /* GlOperationRecorderSql.m */; };
+		1914A95F1D45AB3F00EFAA62 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1914A9551D45AB3F00EFAA62 /* FMDatabase.m */; };
+		1914A9601D45AB3F00EFAA62 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1914A9571D45AB3F00EFAA62 /* FMDatabaseAdditions.m */; };
+		1914A9611D45AB3F00EFAA62 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1914A9591D45AB3F00EFAA62 /* FMDatabasePool.m */; };
+		1914A9621D45AB3F00EFAA62 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1914A95B1D45AB3F00EFAA62 /* FMDatabaseQueue.m */; };
+		1914A9631D45AB3F00EFAA62 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1914A95E1D45AB3F00EFAA62 /* FMResultSet.m */; };
+		1914A9661D45AE6B00EFAA62 /* RecorderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1914A9651D45AE6B00EFAA62 /* RecorderModel.m */; };
+		1914A9681D45B84300EFAA62 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1914A9671D45B84300EFAA62 /* libsqlite3.tbd */; };
+		19C6323D1D430976008794C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C6323C1D430976008794C3 /* main.m */; };
+		19C632401D430976008794C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C6323F1D430976008794C3 /* AppDelegate.m */; };
+		19C632461D430976008794C3 /* GlRecorder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C632441D430976008794C3 /* GlRecorder.storyboard */; };
+		19C632481D430976008794C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C632471D430976008794C3 /* Assets.xcassets */; };
+		19C6324B1D430976008794C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C632491D430976008794C3 /* LaunchScreen.storyboard */; };
+		19C632561D430976008794C3 /* RecorderGlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C632551D430976008794C3 /* RecorderGlTests.m */; };
+		19C632611D430976008794C3 /* RecorderGlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C632601D430976008794C3 /* RecorderGlUITests.m */; };
+		19C6326F1D430BE4008794C3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C6326E1D430BE4008794C3 /* AVFoundation.framework */; };
+		19C632731D433CC8008794C3 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C632721D433CC8008794C3 /* libmp3lame.a */; };
+		19C6327F1D435101008794C3 /* GlCommMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C632781D435101008794C3 /* GlCommMethod.m */; };
+		19C632801D435101008794C3 /* GlDownLoadTaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C6327A1D435101008794C3 /* GlDownLoadTaskModel.m */; };
+		19C632811D435101008794C3 /* UIInitMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C6327D1D435101008794C3 /* UIInitMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		19C7B06F1D46FBC300DF708D /* GlRecoderFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B06E1D46FBC300DF708D /* GlRecoderFunctionViewController.m */; };
+		19C7B0721D46FE7E00DF708D /* GlRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B0711D46FE7E00DF708D /* GlRecorderViewController.m */; };
+		19C7B0751D47215800DF708D /* GlRecorderProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B0741D47215800DF708D /* GlRecorderProgressView.m */; };
+		19C7B07B1D4739DB00DF708D /* RecoderIngTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B07A1D4739DB00DF708D /* RecoderIngTableViewCell.m */; };
+		19C7B0861D4781CF00DF708D /* GlCombinationMp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C7B07D1D4781CF00DF708D /* GlCombinationMp3.png */; };
+		19C7B0871D4781CF00DF708D /* GlDelete.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C7B07E1D4781CF00DF708D /* GlDelete.png */; };
+		19C7B0881D4781CF00DF708D /* GlNCombinationMp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C7B07F1D4781CF00DF708D /* GlNCombinationMp3.png */; };
+		19C7B0891D4781CF00DF708D /* GlNDelete.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C7B0801D4781CF00DF708D /* GlNDelete.png */; };
+		19C7B08A1D4781CF00DF708D /* GlNRename.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C7B0811D4781CF00DF708D /* GlNRename.png */; };
+		19C7B08B1D4781CF00DF708D /* GlNShare.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C7B0821D4781CF00DF708D /* GlNShare.png */; };
+		19C7B08C1D4781CF00DF708D /* GlPauseRecorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C7B0831D4781CF00DF708D /* GlPauseRecorder.png */; };
+		19C7B08D1D4781CF00DF708D /* GlPlayerRecorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C7B0841D4781CF00DF708D /* GlPlayerRecorder.png */; };
+		19C7B08E1D4781CF00DF708D /* GlShare.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C7B0851D4781CF00DF708D /* GlShare.png */; };
+		19C7B0911D47879800DF708D /* GlTitleBottmButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B0901D47879800DF708D /* GlTitleBottmButton.m */; };
+		19C7B0931D4789D900DF708D /* GlRename.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C7B0921D4789D900DF708D /* GlRename.png */; };
+		19D3171E1D484DE9002D8CD9 /* GlRecordering.png in Resources */ = {isa = PBXBuildFile; fileRef = 19D3171C1D484DE9002D8CD9 /* GlRecordering.png */; };
+		19D3171F1D484DE9002D8CD9 /* GlStartRecorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 19D3171D1D484DE9002D8CD9 /* GlStartRecorder.png */; };
+		19D317221D48555D002D8CD9 /* GlAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D317211D48555D002D8CD9 /* GlAlertView.m */; };
+		19D317241D48598B002D8CD9 /* GlRecorderDragIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 19D317231D48598B002D8CD9 /* GlRecorderDragIn.png */; };
+		19D317261D4859B3002D8CD9 /* GlRecorderDragOutside.png in Resources */ = {isa = PBXBuildFile; fileRef = 19D317251D4859B3002D8CD9 /* GlRecorderDragOutside.png */; };
+		213DADA31D449F4F00467F59 /* duhongcheng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 213DADA21D449F4F00467F59 /* duhongcheng.mp3 */; };
+		213DADA51D449F6B00467F59 /* duhongcheng1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 213DADA41D449F6B00467F59 /* duhongcheng1.mp3 */; };
+		213DADA71D449F7A00467F59 /* tmpRecord.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 213DADA61D449F7A00467F59 /* tmpRecord.mp3 */; };
+		213DADA91D44E79B00467F59 /* xiatian.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 213DADA81D44E79B00467F59 /* xiatian.mp3 */; };
+		21B4316E1D47B2E100E4678F /* ViewCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B4316D1D47B2E100E4678F /* ViewCode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19C632521D430976008794C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19C632301D430976008794C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19C632371D430976008794C3;
+			remoteInfo = RecorderGl;
+		};
+		19C6325D1D430976008794C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19C632301D430976008794C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19C632371D430976008794C3;
+			remoteInfo = RecorderGl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1904FFB01D45FD3A00088DD8 /* RecorderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderTableViewCell.h; sourceTree = "<group>"; };
+		1904FFB11D45FD3A00088DD8 /* RecorderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderTableViewCell.m; sourceTree = "<group>"; };
+		1914A9501D45A7E800EFAA62 /* GlOperationRecorderSql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlOperationRecorderSql.h; sourceTree = "<group>"; };
+		1914A9511D45A7E800EFAA62 /* GlOperationRecorderSql.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlOperationRecorderSql.m; sourceTree = "<group>"; };
+		1914A9541D45AB3F00EFAA62 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		1914A9551D45AB3F00EFAA62 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		1914A9561D45AB3F00EFAA62 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		1914A9571D45AB3F00EFAA62 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		1914A9581D45AB3F00EFAA62 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		1914A9591D45AB3F00EFAA62 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		1914A95A1D45AB3F00EFAA62 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		1914A95B1D45AB3F00EFAA62 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		1914A95C1D45AB3F00EFAA62 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		1914A95D1D45AB3F00EFAA62 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		1914A95E1D45AB3F00EFAA62 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		1914A9641D45AE6B00EFAA62 /* RecorderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderModel.h; sourceTree = "<group>"; };
+		1914A9651D45AE6B00EFAA62 /* RecorderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderModel.m; sourceTree = "<group>"; };
+		1914A9671D45B84300EFAA62 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		19C632381D430976008794C3 /* RecorderGl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecorderGl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C6323C1D430976008794C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19C6323E1D430976008794C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19C6323F1D430976008794C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19C632451D430976008794C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GlRecorder.storyboard; sourceTree = "<group>"; };
+		19C632471D430976008794C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19C6324A1D430976008794C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19C6324C1D430976008794C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C632511D430976008794C3 /* RecorderGlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecorderGlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C632551D430976008794C3 /* RecorderGlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecorderGlTests.m; sourceTree = "<group>"; };
+		19C632571D430976008794C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C6325C1D430976008794C3 /* RecorderGlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecorderGlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C632601D430976008794C3 /* RecorderGlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecorderGlUITests.m; sourceTree = "<group>"; };
+		19C632621D430976008794C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C6326E1D430BE4008794C3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		19C632711D433CC8008794C3 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		19C632721D433CC8008794C3 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		19C632751D435101008794C3 /* Common_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common_define.h; sourceTree = "<group>"; };
+		19C632761D435101008794C3 /* GlCommHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlCommHeader.h; sourceTree = "<group>"; };
+		19C632771D435101008794C3 /* GlCommMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlCommMethod.h; sourceTree = "<group>"; };
+		19C632781D435101008794C3 /* GlCommMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlCommMethod.m; sourceTree = "<group>"; };
+		19C632791D435101008794C3 /* GlDownLoadTaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlDownLoadTaskModel.h; sourceTree = "<group>"; };
+		19C6327A1D435101008794C3 /* GlDownLoadTaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlDownLoadTaskModel.m; sourceTree = "<group>"; };
+		19C6327B1D435101008794C3 /* TaskCellStatusDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCellStatusDelegate.h; sourceTree = "<group>"; };
+		19C6327C1D435101008794C3 /* UIInitMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInitMethod.h; sourceTree = "<group>"; };
+		19C6327D1D435101008794C3 /* UIInitMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIInitMethod.m; sourceTree = "<group>"; };
+		19C6327E1D435101008794C3 /* WebStatusDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebStatusDelegate.h; sourceTree = "<group>"; };
+		19C7B06D1D46FBC300DF708D /* GlRecoderFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlRecoderFunctionViewController.h; sourceTree = "<group>"; };
+		19C7B06E1D46FBC300DF708D /* GlRecoderFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlRecoderFunctionViewController.m; sourceTree = "<group>"; };
+		19C7B0701D46FE7E00DF708D /* GlRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlRecorderViewController.h; sourceTree = "<group>"; };
+		19C7B0711D46FE7E00DF708D /* GlRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlRecorderViewController.m; sourceTree = "<group>"; };
+		19C7B0731D47215800DF708D /* GlRecorderProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlRecorderProgressView.h; sourceTree = "<group>"; };
+		19C7B0741D47215800DF708D /* GlRecorderProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlRecorderProgressView.m; sourceTree = "<group>"; };
+		19C7B0791D4739DB00DF708D /* RecoderIngTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecoderIngTableViewCell.h; sourceTree = "<group>"; };
+		19C7B07A1D4739DB00DF708D /* RecoderIngTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecoderIngTableViewCell.m; sourceTree = "<group>"; };
+		19C7B07D1D4781CF00DF708D /* GlCombinationMp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlCombinationMp3.png; sourceTree = "<group>"; };
+		19C7B07E1D4781CF00DF708D /* GlDelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlDelete.png; sourceTree = "<group>"; };
+		19C7B07F1D4781CF00DF708D /* GlNCombinationMp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlNCombinationMp3.png; sourceTree = "<group>"; };
+		19C7B0801D4781CF00DF708D /* GlNDelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlNDelete.png; sourceTree = "<group>"; };
+		19C7B0811D4781CF00DF708D /* GlNRename.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlNRename.png; sourceTree = "<group>"; };
+		19C7B0821D4781CF00DF708D /* GlNShare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlNShare.png; sourceTree = "<group>"; };
+		19C7B0831D4781CF00DF708D /* GlPauseRecorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlPauseRecorder.png; sourceTree = "<group>"; };
+		19C7B0841D4781CF00DF708D /* GlPlayerRecorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlPlayerRecorder.png; sourceTree = "<group>"; };
+		19C7B0851D4781CF00DF708D /* GlShare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlShare.png; sourceTree = "<group>"; };
+		19C7B08F1D47879800DF708D /* GlTitleBottmButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlTitleBottmButton.h; sourceTree = "<group>"; };
+		19C7B0901D47879800DF708D /* GlTitleBottmButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlTitleBottmButton.m; sourceTree = "<group>"; };
+		19C7B0921D4789D900DF708D /* GlRename.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlRename.png; sourceTree = "<group>"; };
+		19D3171C1D484DE9002D8CD9 /* GlRecordering.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlRecordering.png; sourceTree = "<group>"; };
+		19D3171D1D484DE9002D8CD9 /* GlStartRecorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlStartRecorder.png; sourceTree = "<group>"; };
+		19D317201D48555D002D8CD9 /* GlAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlAlertView.h; sourceTree = "<group>"; };
+		19D317211D48555D002D8CD9 /* GlAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlAlertView.m; sourceTree = "<group>"; };
+		19D317231D48598B002D8CD9 /* GlRecorderDragIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlRecorderDragIn.png; sourceTree = "<group>"; };
+		19D317251D4859B3002D8CD9 /* GlRecorderDragOutside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlRecorderDragOutside.png; sourceTree = "<group>"; };
+		213DADA21D449F4F00467F59 /* duhongcheng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = duhongcheng.mp3; sourceTree = "<group>"; };
+		213DADA41D449F6B00467F59 /* duhongcheng1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = duhongcheng1.mp3; sourceTree = "<group>"; };
+		213DADA61D449F7A00467F59 /* tmpRecord.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tmpRecord.mp3; sourceTree = "<group>"; };
+		213DADA81D44E79B00467F59 /* xiatian.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xiatian.mp3; sourceTree = "<group>"; };
+		21B4316C1D47B2E100E4678F /* ViewCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCode.h; sourceTree = "<group>"; };
+		21B4316D1D47B2E100E4678F /* ViewCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCode.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19C632351D430976008794C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1914A9681D45B84300EFAA62 /* libsqlite3.tbd in Frameworks */,
+				19C6326F1D430BE4008794C3 /* AVFoundation.framework in Frameworks */,
+				19C632731D433CC8008794C3 /* libmp3lame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C6324E1D430976008794C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C632591D430976008794C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1904FFAF1D45FD0F00088DD8 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1904FFB01D45FD3A00088DD8 /* RecorderTableViewCell.h */,
+				1904FFB11D45FD3A00088DD8 /* RecorderTableViewCell.m */,
+				19C7B0731D47215800DF708D /* GlRecorderProgressView.h */,
+				19C7B0741D47215800DF708D /* GlRecorderProgressView.m */,
+				19C7B0791D4739DB00DF708D /* RecoderIngTableViewCell.h */,
+				19C7B07A1D4739DB00DF708D /* RecoderIngTableViewCell.m */,
+				19C7B08F1D47879800DF708D /* GlTitleBottmButton.h */,
+				19C7B0901D47879800DF708D /* GlTitleBottmButton.m */,
+				19D317201D48555D002D8CD9 /* GlAlertView.h */,
+				19D317211D48555D002D8CD9 /* GlAlertView.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		1914A94F1D45A76D00EFAA62 /* sql */ = {
+			isa = PBXGroup;
+			children = (
+				1914A9501D45A7E800EFAA62 /* GlOperationRecorderSql.h */,
+				1914A9511D45A7E800EFAA62 /* GlOperationRecorderSql.m */,
+				1914A9641D45AE6B00EFAA62 /* RecorderModel.h */,
+				1914A9651D45AE6B00EFAA62 /* RecorderModel.m */,
+			);
+			name = sql;
+			sourceTree = "<group>";
+		};
+		1914A9531D45AB3F00EFAA62 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				1914A9541D45AB3F00EFAA62 /* FMDatabase.h */,
+				1914A9551D45AB3F00EFAA62 /* FMDatabase.m */,
+				1914A9561D45AB3F00EFAA62 /* FMDatabaseAdditions.h */,
+				1914A9571D45AB3F00EFAA62 /* FMDatabaseAdditions.m */,
+				1914A9581D45AB3F00EFAA62 /* FMDatabasePool.h */,
+				1914A9591D45AB3F00EFAA62 /* FMDatabasePool.m */,
+				1914A95A1D45AB3F00EFAA62 /* FMDatabaseQueue.h */,
+				1914A95B1D45AB3F00EFAA62 /* FMDatabaseQueue.m */,
+				1914A95C1D45AB3F00EFAA62 /* FMDB.h */,
+				1914A95D1D45AB3F00EFAA62 /* FMResultSet.h */,
+				1914A95E1D45AB3F00EFAA62 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		19C6322F1D430976008794C3 = {
+			isa = PBXGroup;
+			children = (
+				1914A9671D45B84300EFAA62 /* libsqlite3.tbd */,
+				19C6326E1D430BE4008794C3 /* AVFoundation.framework */,
+				19C6323A1D430976008794C3 /* RecorderGl */,
+				19C632541D430976008794C3 /* RecorderGlTests */,
+				19C6325F1D430976008794C3 /* RecorderGlUITests */,
+				19C632391D430976008794C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19C632391D430976008794C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19C632381D430976008794C3 /* RecorderGl.app */,
+				19C632511D430976008794C3 /* RecorderGlTests.xctest */,
+				19C6325C1D430976008794C3 /* RecorderGlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19C6323A1D430976008794C3 /* RecorderGl */ = {
+			isa = PBXGroup;
+			children = (
+				19C7B07C1D4781C800DF708D /* resource */,
+				1904FFAF1D45FD0F00088DD8 /* cell */,
+				1914A9531D45AB3F00EFAA62 /* fmdb */,
+				1914A94F1D45A76D00EFAA62 /* sql */,
+				19C632741D435101008794C3 /* Comm */,
+				19C6323E1D430976008794C3 /* AppDelegate.h */,
+				19C6323F1D430976008794C3 /* AppDelegate.m */,
+				19C7B0701D46FE7E00DF708D /* GlRecorderViewController.h */,
+				19C7B0711D46FE7E00DF708D /* GlRecorderViewController.m */,
+				19C7B06D1D46FBC300DF708D /* GlRecoderFunctionViewController.h */,
+				19C7B06E1D46FBC300DF708D /* GlRecoderFunctionViewController.m */,
+				213DADA81D44E79B00467F59 /* xiatian.mp3 */,
+				213DADA21D449F4F00467F59 /* duhongcheng.mp3 */,
+				213DADA41D449F6B00467F59 /* duhongcheng1.mp3 */,
+				213DADA61D449F7A00467F59 /* tmpRecord.mp3 */,
+				19C632441D430976008794C3 /* GlRecorder.storyboard */,
+				19C632471D430976008794C3 /* Assets.xcassets */,
+				19C632491D430976008794C3 /* LaunchScreen.storyboard */,
+				19C6324C1D430976008794C3 /* Info.plist */,
+				19C6323B1D430976008794C3 /* Supporting Files */,
+			);
+			path = RecorderGl;
+			sourceTree = "<group>";
+		};
+		19C6323B1D430976008794C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19C632701D433CB2008794C3 /* lame */,
+				19C6323C1D430976008794C3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19C632541D430976008794C3 /* RecorderGlTests */ = {
+			isa = PBXGroup;
+			children = (
+				19C632551D430976008794C3 /* RecorderGlTests.m */,
+				19C632571D430976008794C3 /* Info.plist */,
+			);
+			path = RecorderGlTests;
+			sourceTree = "<group>";
+		};
+		19C6325F1D430976008794C3 /* RecorderGlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19C632601D430976008794C3 /* RecorderGlUITests.m */,
+				19C632621D430976008794C3 /* Info.plist */,
+			);
+			path = RecorderGlUITests;
+			sourceTree = "<group>";
+		};
+		19C632701D433CB2008794C3 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				19C632711D433CC8008794C3 /* lame.h */,
+				19C632721D433CC8008794C3 /* libmp3lame.a */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		19C632741D435101008794C3 /* Comm */ = {
+			isa = PBXGroup;
+			children = (
+				21B4316C1D47B2E100E4678F /* ViewCode.h */,
+				21B4316D1D47B2E100E4678F /* ViewCode.m */,
+				19C632751D435101008794C3 /* Common_define.h */,
+				19C632761D435101008794C3 /* GlCommHeader.h */,
+				19C632771D435101008794C3 /* GlCommMethod.h */,
+				19C632781D435101008794C3 /* GlCommMethod.m */,
+				19C632791D435101008794C3 /* GlDownLoadTaskModel.h */,
+				19C6327A1D435101008794C3 /* GlDownLoadTaskModel.m */,
+				19C6327B1D435101008794C3 /* TaskCellStatusDelegate.h */,
+				19C6327C1D435101008794C3 /* UIInitMethod.h */,
+				19C6327D1D435101008794C3 /* UIInitMethod.m */,
+				19C6327E1D435101008794C3 /* WebStatusDelegate.h */,
+			);
+			path = Comm;
+			sourceTree = "<group>";
+		};
+		19C7B07C1D4781C800DF708D /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				19C7B07D1D4781CF00DF708D /* GlCombinationMp3.png */,
+				19C7B07E1D4781CF00DF708D /* GlDelete.png */,
+				19C7B07F1D4781CF00DF708D /* GlNCombinationMp3.png */,
+				19C7B0801D4781CF00DF708D /* GlNDelete.png */,
+				19C7B0921D4789D900DF708D /* GlRename.png */,
+				19C7B0811D4781CF00DF708D /* GlNRename.png */,
+				19C7B0821D4781CF00DF708D /* GlNShare.png */,
+				19C7B0831D4781CF00DF708D /* GlPauseRecorder.png */,
+				19C7B0841D4781CF00DF708D /* GlPlayerRecorder.png */,
+				19C7B0851D4781CF00DF708D /* GlShare.png */,
+				19D3171C1D484DE9002D8CD9 /* GlRecordering.png */,
+				19D3171D1D484DE9002D8CD9 /* GlStartRecorder.png */,
+				19D317231D48598B002D8CD9 /* GlRecorderDragIn.png */,
+				19D317251D4859B3002D8CD9 /* GlRecorderDragOutside.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19C632371D430976008794C3 /* RecorderGl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C632651D430976008794C3 /* Build configuration list for PBXNativeTarget "RecorderGl" */;
+			buildPhases = (
+				19C632341D430976008794C3 /* Sources */,
+				19C632351D430976008794C3 /* Frameworks */,
+				19C632361D430976008794C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecorderGl;
+			productName = RecorderGl;
+			productReference = 19C632381D430976008794C3 /* RecorderGl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19C632501D430976008794C3 /* RecorderGlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C632681D430976008794C3 /* Build configuration list for PBXNativeTarget "RecorderGlTests" */;
+			buildPhases = (
+				19C6324D1D430976008794C3 /* Sources */,
+				19C6324E1D430976008794C3 /* Frameworks */,
+				19C6324F1D430976008794C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19C632531D430976008794C3 /* PBXTargetDependency */,
+			);
+			name = RecorderGlTests;
+			productName = RecorderGlTests;
+			productReference = 19C632511D430976008794C3 /* RecorderGlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19C6325B1D430976008794C3 /* RecorderGlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C6326B1D430976008794C3 /* Build configuration list for PBXNativeTarget "RecorderGlUITests" */;
+			buildPhases = (
+				19C632581D430976008794C3 /* Sources */,
+				19C632591D430976008794C3 /* Frameworks */,
+				19C6325A1D430976008794C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19C6325E1D430976008794C3 /* PBXTargetDependency */,
+			);
+			name = RecorderGlUITests;
+			productName = RecorderGlUITests;
+			productReference = 19C6325C1D430976008794C3 /* RecorderGlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19C632301D430976008794C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = dsw;
+				TargetAttributes = {
+					19C632371D430976008794C3 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7VQH7H24HA;
+					};
+					19C632501D430976008794C3 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7VQH7H24HA;
+						TestTargetID = 19C632371D430976008794C3;
+					};
+					19C6325B1D430976008794C3 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7VQH7H24HA;
+						TestTargetID = 19C632371D430976008794C3;
+					};
+				};
+			};
+			buildConfigurationList = 19C632331D430976008794C3 /* Build configuration list for PBXProject "RecorderGl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19C6322F1D430976008794C3;
+			productRefGroup = 19C632391D430976008794C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19C632371D430976008794C3 /* RecorderGl */,
+				19C632501D430976008794C3 /* RecorderGlTests */,
+				19C6325B1D430976008794C3 /* RecorderGlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19C632361D430976008794C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C7B0891D4781CF00DF708D /* GlNDelete.png in Resources */,
+				19C7B08A1D4781CF00DF708D /* GlNRename.png in Resources */,
+				19C7B0881D4781CF00DF708D /* GlNCombinationMp3.png in Resources */,
+				19C7B0871D4781CF00DF708D /* GlDelete.png in Resources */,
+				19C7B0931D4789D900DF708D /* GlRename.png in Resources */,
+				19C7B08E1D4781CF00DF708D /* GlShare.png in Resources */,
+				19C7B08D1D4781CF00DF708D /* GlPlayerRecorder.png in Resources */,
+				19D3171E1D484DE9002D8CD9 /* GlRecordering.png in Resources */,
+				19C6324B1D430976008794C3 /* LaunchScreen.storyboard in Resources */,
+				19D3171F1D484DE9002D8CD9 /* GlStartRecorder.png in Resources */,
+				19D317261D4859B3002D8CD9 /* GlRecorderDragOutside.png in Resources */,
+				213DADA71D449F7A00467F59 /* tmpRecord.mp3 in Resources */,
+				19C632481D430976008794C3 /* Assets.xcassets in Resources */,
+				19C7B08C1D4781CF00DF708D /* GlPauseRecorder.png in Resources */,
+				213DADA91D44E79B00467F59 /* xiatian.mp3 in Resources */,
+				19C632461D430976008794C3 /* GlRecorder.storyboard in Resources */,
+				19C7B0861D4781CF00DF708D /* GlCombinationMp3.png in Resources */,
+				213DADA31D449F4F00467F59 /* duhongcheng.mp3 in Resources */,
+				19D317241D48598B002D8CD9 /* GlRecorderDragIn.png in Resources */,
+				19C7B08B1D4781CF00DF708D /* GlNShare.png in Resources */,
+				213DADA51D449F6B00467F59 /* duhongcheng1.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C6324F1D430976008794C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C6325A1D430976008794C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19C632341D430976008794C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1914A9661D45AE6B00EFAA62 /* RecorderModel.m in Sources */,
+				19C7B0751D47215800DF708D /* GlRecorderProgressView.m in Sources */,
+				19C7B0911D47879800DF708D /* GlTitleBottmButton.m in Sources */,
+				21B4316E1D47B2E100E4678F /* ViewCode.m in Sources */,
+				19C632811D435101008794C3 /* UIInitMethod.m in Sources */,
+				19C7B07B1D4739DB00DF708D /* RecoderIngTableViewCell.m in Sources */,
+				1904FFB21D45FD3A00088DD8 /* RecorderTableViewCell.m in Sources */,
+				19C6327F1D435101008794C3 /* GlCommMethod.m in Sources */,
+				19C632401D430976008794C3 /* AppDelegate.m in Sources */,
+				19C6323D1D430976008794C3 /* main.m in Sources */,
+				1914A9601D45AB3F00EFAA62 /* FMDatabaseAdditions.m in Sources */,
+				1914A9631D45AB3F00EFAA62 /* FMResultSet.m in Sources */,
+				19C632801D435101008794C3 /* GlDownLoadTaskModel.m in Sources */,
+				1914A9611D45AB3F00EFAA62 /* FMDatabasePool.m in Sources */,
+				1914A9621D45AB3F00EFAA62 /* FMDatabaseQueue.m in Sources */,
+				1914A9521D45A7E800EFAA62 /* GlOperationRecorderSql.m in Sources */,
+				19C7B0721D46FE7E00DF708D /* GlRecorderViewController.m in Sources */,
+				19C7B06F1D46FBC300DF708D /* GlRecoderFunctionViewController.m in Sources */,
+				19D317221D48555D002D8CD9 /* GlAlertView.m in Sources */,
+				1914A95F1D45AB3F00EFAA62 /* FMDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C6324D1D430976008794C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C632561D430976008794C3 /* RecorderGlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C632581D430976008794C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C632611D430976008794C3 /* RecorderGlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19C632531D430976008794C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19C632371D430976008794C3 /* RecorderGl */;
+			targetProxy = 19C632521D430976008794C3 /* PBXContainerItemProxy */;
+		};
+		19C6325E1D430976008794C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19C632371D430976008794C3 /* RecorderGl */;
+			targetProxy = 19C6325D1D430976008794C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19C632441D430976008794C3 /* GlRecorder.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19C632451D430976008794C3 /* Base */,
+			);
+			name = GlRecorder.storyboard;
+			sourceTree = "<group>";
+		};
+		19C632491D430976008794C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19C6324A1D430976008794C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19C632631D430976008794C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19C632641D430976008794C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19C632661D430976008794C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = RecorderGl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RecorderGl/lame",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsw.------.RecorderGl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19C632671D430976008794C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = RecorderGl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RecorderGl/lame",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsw.------.RecorderGl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19C632691D430976008794C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RecorderGlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsw.------.RecorderGlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecorderGl.app/RecorderGl";
+			};
+			name = Debug;
+		};
+		19C6326A1D430976008794C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RecorderGlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsw.------.RecorderGlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecorderGl.app/RecorderGl";
+			};
+			name = Release;
+		};
+		19C6326C1D430976008794C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RecorderGlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsw.------.RecorderGlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RecorderGl;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		19C6326D1D430976008794C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RecorderGlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsw.------.RecorderGlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RecorderGl;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19C632331D430976008794C3 /* Build configuration list for PBXProject "RecorderGl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C632631D430976008794C3 /* Debug */,
+				19C632641D430976008794C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19C632651D430976008794C3 /* Build configuration list for PBXNativeTarget "RecorderGl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C632661D430976008794C3 /* Debug */,
+				19C632671D430976008794C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19C632681D430976008794C3 /* Build configuration list for PBXNativeTarget "RecorderGlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C632691D430976008794C3 /* Debug */,
+				19C6326A1D430976008794C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19C6326B1D430976008794C3 /* Build configuration list for PBXNativeTarget "RecorderGlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C6326C1D430976008794C3 /* Debug */,
+				19C6326D1D430976008794C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19C632301D430976008794C3 /* Project object */;
+}
