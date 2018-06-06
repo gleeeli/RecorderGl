@@ -667,7 +667,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/RecorderGl/lame",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dsw.------.RecorderGl";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsw.gleeeli.RecorderGl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -683,7 +683,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/RecorderGl/lame",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dsw.------.RecorderGl";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsw.gleeeli.RecorderGl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
